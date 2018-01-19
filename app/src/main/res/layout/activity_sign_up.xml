@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sablogo" />
+
+            <EditText
+                android:id="@+id/sign_up_full_name"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lightgrey"
+                android:drawableLeft="@drawable/ic_person_outline_black_24px"
+                android:hint="  Full Name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/signup_contact_no"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lightgrey"
+                android:drawableLeft="@drawable/ic_phone_in_talk_black_24px"
+                android:hint="   Contact No."
+                android:inputType="phone"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/sign_up_mail"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lightgrey"
+                android:drawableLeft="@drawable/ic_mail_outline_black_24px"
+                android:hint="   E-mail ID"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+            <Button
+                android:id="@+id/sign_up_otp"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_button"
+                android:elevation="8dp"
+                android:text="Generate OTP"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"></Button>
+
+
+            <TextView
+                android:id="@+id/already_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/already_user"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/sablogo" />
+
+            <EditText
+                android:id="@+id/contact_no."
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/lightgrey"
+                android:drawableLeft="@drawable/ic_phone_in_talk_black_24px"
+                android:hint="   Contact No."
+                android:inputType="phone"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
+
+            <Button
+                android:id="@+id/OTP"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corner_button"
+                android:elevation="8dp"
+                android:text="Generate OTP"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:text="@string/or"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

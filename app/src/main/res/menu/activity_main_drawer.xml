@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/wallet"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/addcourses"
+            android:title="Add Courses" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/msg"
+            android:title="Notification" />
+        <item
+            android:id="@+id/refer_earn"
+            android:icon="@drawable/refer"
+            android:title="@string/refer_earn"></item>
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/aboutus"
+            android:title="About Us"></item>
+    </group>
+
+
+
+</menu>
